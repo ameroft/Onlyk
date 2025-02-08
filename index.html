@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Для просмотра контента вам нужно купить подписку</h1>
+        <p> Переведите 50000 тысяч рублей на номер: <strong>+79872707420</strong></p>
+        <p class="warning">В комментариях укажите обратный контакт.</p>
+        <p class="disclaimer">Есть вероятность ничего не получить. Я бы не переводил.</p>
+       <!-- Кнопка "Показать контент" -->
+        <button id="showContent">Купить подписку</button>
+
+        <!-- Скрытый контент -->
+        <div id="hiddenContent" style="display: none;">
+            <p>Попался шалун, руки на стол!</p>
+        </div>
+
+        <!-- Изображение -->
+        <img src="i.png" alt="Моё изображение" class="image">
+    </div>
+
+<script>
+    document.getElementById('showContent').addEventListener('click', function() {
+        document.getElementById('hiddenContent').style.display = 'block';
+    });
+</script>
