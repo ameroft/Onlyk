@@ -1,2 +1,0 @@
-# Onlyk
-my onlyk
